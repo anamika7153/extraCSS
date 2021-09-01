@@ -1,0 +1,34 @@
+
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+}
+.child:hover {
+    background-color: tomato;
+}
+input:focus {
+    background-color: violet;
+}
+div::selection {
+    background-color: turquoise;
+}
+
+li{
+    list-style : none;
+    font-size: 3rem;
+    position: relative;
+    padding-right: 100px;
+    display: inline-block;
+}
+li::after {
+    content: "";
+    position: absolute;
+    width:30px;
+    height: 30px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    top: 30%;
+    left: 50%;
+}
